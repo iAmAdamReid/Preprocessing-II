@@ -10,6 +10,19 @@
   justify-content: center;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.btn:hover {
+  transform: scale(1.15, 1.15);
+}
+.hover-zoom {
+  transform: scale(1.15, 1.15);
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -181,11 +194,15 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+.main-navigation {
+  border-bottom: 2px dashed gray;
+  width: 100%;
+  background: white;
+}
 .main-navigation .nav-container {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border-bottom: 2px dashed gray;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {
@@ -196,6 +213,11 @@ img {
   padding: 10px;
   padding-left: 0px;
   text-align: center;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.main-navigation .nav-container .logo-heading:hover {
+  transform: scale(1.15, 1.15);
 }
 .main-navigation nav {
   display: flex;
@@ -207,6 +229,16 @@ img {
   text-decoration: none;
   outline: none;
   color: black;
+  transition: 300ms ease-in-out;
+}
+.main-navigation nav a:hover {
+  transform: scale(1.15, 1.15);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .footer {
   width: 100%;

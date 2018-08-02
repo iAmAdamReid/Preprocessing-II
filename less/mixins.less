@@ -18,4 +18,18 @@
 
 .btn {
     .button-constructor(50px, 100%, teal, white, 10px);
+    transition: 300ms ease-in-out;
+
+    @media @mobile {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.btn:hover{ 
+        .hover-zoom();
+}
+
+.hover-zoom {
+    transform: scale(1.15, 1.15);
 }

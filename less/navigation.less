@@ -1,11 +1,16 @@
 // Navigation Styles here
 
+
 .main-navigation {
+    border-bottom: 2px dashed gray;
+    width: 100%;
+    background: white;
+
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        border-bottom: 2px dashed gray;
+        
 
         @media @mobile {
             display: block;
@@ -15,6 +20,12 @@
             padding: 10px;
             padding-left: 0px;
             text-align: center;
+            transition: 300ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                .hover-zoom();
+            }
 
         }
     }
@@ -29,6 +40,18 @@
             text-decoration: none;
             outline: none;
             color: black;
+            transition: 300ms ease-in-out;
+
+            &:hover{
+                .hover-zoom();
+            }
         }
     }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
