@@ -1,1 +1,21 @@
 // Mixins in here
+
+
+// Button Constructor Mixin
+.button-constructor(@height, @width, @background, @color, @border-radius){
+    height: @height;
+    width: @width;
+    background: @background;
+    color: @color;
+    border-radius: @border-radius;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn {
+    .button-constructor(50px, 100%, teal, white, 10px);
+}
